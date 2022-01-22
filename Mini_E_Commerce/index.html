@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lojinha</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="./js/querys.js" defer></script>
+        <script src="./js/script.js" defer></script>
+        <script src="./js/filter_produtos.js" defer></script>
+        <script src="./js/search.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div>MyLoja</div>
+                <div>
+                    <input type="search" id="searchProd" name="q" placeholder="Busque por itens aqui"
+                           aria-label="Search through site content">
+                    
+                </div>
+            </div>
+        </header>
+        <div class="carrinho-icon">
+            <span>1</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+              </svg>
+        </div>
+        <main>
+            <aside>
+                <div class="categoria">
+                    <p>Tipo de produto</p>
+                    <form class="form-produtos">
+                        <input type="radio" class="input-produto-type" id="tv" name="tv" value="tv" >
+                        <label for="tv">TVs</label><br>
+                        <input type="radio" class="input-produto-type"  id="cel" name="celular" value="cel">
+                        <label for="cel">Celulares</label><br>
+                        <input type="radio" class="input-produto-type"  id="relogio" name="relogio" value="relogio">
+                        <label for="relogio">Relogios</label>
+                    </form>
+                    <p>Faixa de preço</p>
+                    <form class="form-produtos">
+                        <input type="radio" id="op1" name="faixa-preco" class="faixa-preco" value="op1">
+                        <label class="faixa-preco-label" for="op1">0-500</label><br>
+                        <input type="radio" id="op2" name="faixa-preco" class="faixa-preco" value="op2">
+                        <label class="faixa-preco-label" for="op2">500-1000</label><br>
+                        <input type="radio" id="op3" name="faixa-preco" class="faixa-preco" value="op3">
+                        <label class="faixa-preco-label" for="op3">1000-20000</label>
+                    </form>
+                </div>
+            </aside>
+            <div class="product-area"> 
+                <div class="products">
+                    <div class="produto celular">
+                        <div class="ID-produto">3332</div>
+                        <img src="img/cel1.jpg" alt="celular" />
+                        <p class="name-produto">Xiaomi 10</p>
+                        <p class="price-produto">R$ 250,00</p>
+                        <input type='number' size='5' id='numberinput' name='mynumber' value='0' min="0" max="100"/>
+                        <input type="submit" class="buy-button" value="Buy">
+                    </div>
+                    
+                    <div class="produto celular">
+                        <div class="ID-produto">1111</div>
+                        <img src="img/cel2.jpg" alt="celular" />
+                        <p class="name-produto">Galaxy 1</p>
+                        <p class="price-produto">R$ 350,00</p>
+                        <input type='number' size='5' id='numberinput' name='mynumber' value='0' min="0" max="100"/>
+                        <input type="submit" class="buy-button" value="Buy">
+                    </div>
+
+                    <div class="produto celular">
+                        <div class="ID-produto">2222</div>
+                        <img src="img/cel3.jpg" alt="celular" />
+                        <p class="name-produto">Iphone X</p>
+                        <p class="price-produto">R$ 9250,00</p>
+                        <input type='number' size='5' id='numberinput' name='mynumber' value='0' min="0" max="100"/>
+                        <input type="submit" class="buy-button" value="Buy">
+                    </div>
+
+                    <div class="produto relogio">
+                        <div class="ID-produto">4444</div>
+                        <img src="img/relogio1.jpg" alt="relogio" />
+                        <p class="name-produto">Rolex 1</p>
+                        <p class="price-produto">R$ 11250,00</p>
+                        <input type='number' size='5' id='numberinput' name='mynumber' value='0' min="0" max="100"/>
+                        <input type="submit" class="buy-button" value="Buy">
+                    </div>
+
+                    <div class="produto relogio">
+                        <div class="ID-produto">5555</div>
+                        <img src="img/relogio2.jpg" alt="relogio" />
+                        <p class="name-produto">Rolex 2</p>
+                        <p class="price-produto">R$ 17250,00</p>
+                        <input type='number' size='5' id='numberinput' name='mynumber' value='0' min="0" max="100"/>
+                        <input type="submit" class="buy-button" value="Buy">
+                    </div>
+
+                    <div class="produto relogio">
+                        <div class="ID-produto">6666</div>
+                        <img src="img/relogio3.jpg" alt="relogio" />
+                        <p class="name-produto">Rolex 3</p>
+                        <p class="price-produto">R$ 950,00</p>
+                        <input type='number' size='5' id='numberinput' name='mynumber' value='0' min="0" max="100"/>
+                        <input type="submit" class="buy-button" value="Buy">
+                    </div>
+
+                    <div class="produto tv">
+                        <div class="ID-produto">7777</div>
+                        <img src="img/tv1.jpg" alt="tv" />
+                        <p class="name-produto">Panasonic 3D</p>
+                        <p class="price-produto">R$ 850,00</p>
+                        <input type='number' size='5' id='numberinput' name='mynumber' value='0' min="0" max="100"/>
+                        <input type="submit" class="buy-button" value="Buy">
+                    </div>
+
+                    <div class="produto tv">
+                        <div class="ID-produto">8888</div>
+                        <img src="img/tv2.jpg" alt="tv" />
+                        <p class="name-produto">Samsung HD</p>
+                        <p class="price-produto">R$ 9050,00</p>
+                        <input type='number' size='5' id='numberinput' name='mynumber' value='0' min="0" max="100"/>
+                        <input type="submit" class="buy-button" value="Buy">
+                    </div>
+
+
+                    <div class="produto tv">
+                        <div class="ID-produto">9999</div>
+                        <img src="img/tv3.jpg" alt="tv" />
+                        <p class="name-produto">Apple TV</p>
+                        <p class="price-produto">R$ 15250,00</p>
+                        <input type='number' size='5' id='numberinput' name='mynumber' value='0' min="0" max="100"/>
+                        <input type="submit" class="buy-button" value="Buy">
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        
+        <div class="carrinho">
+            <div class="button-close-carrinho">
+                <span>X</span>
+            </div>
+            <div class="carrinho-produtos">
+                <!---
+                <div class="produtos-in-carrinho">
+                    <div class="ID-produto">1432</div>
+                    <img src="img/cel1.jpg" alt="cel1" />
+                    <div class="info-produtos-carrinho">
+                        <p>Galaxy 1</p>
+                        <p>R$ 1250,00</p>
+                        <p>Quantidade: <span>5</span></p>
+                        <button type="button" class="remover-produto-carrinho">Remover</button>
+                    </div>
+                </div>
+                <div class="produtos-in-carrinho">
+                    <img src="img/cel1.jpg" alt="cel1" />
+                    <div class="info-produtos-carrinho">
+                        <p>Galaxy 1</p>
+                        <p>R$ 1250,00</p>
+                        <p>Quantidade: <span>5</span></p>
+                        <button type="button" class="remover-produto-carrinho">Remover</button>
+                    </div>
+                </div>
+                
+                <div class="produtos-in-carrinho">
+                    <img src="img/cel1.jpg" alt="cel1" />
+                    <div class="info-produtos-carrinho">
+                        <p>Galaxy 1</p>
+                        <p>R$ 1250,00</p>
+                        <p>Quantidade: <span>5</span></p>
+                    </div>
+                </div>
+                <div class="produtos-in-carrinho">
+                    <img src="img/cel1.jpg" alt="cel1" />
+                    <div class="info-produtos-carrinho">
+                        <p>Galaxy 1</p>
+                        <p>R$ 1250,00</p>
+                        <p>Quantidade: <span>5</span></p>
+                    </div>
+                </div>
+                <div class="produtos-in-carrinho">
+                    <img src="img/cel1.jpg" alt="cel1" />
+                    <div class="info-produtos-carrinho">
+                        <p>Galaxy 1</p>
+                        <p>R$ 1250,00</p>
+                        <p>Quantidade: <span>5</span></p>
+                    </div>
+                </div>
+                <div class="produtos-in-carrinho">
+                    <img src="img/cel1.jpg" alt="cel1" />
+                    <div class="info-produtos-carrinho">
+                        <p>Galaxy 1</p>
+                        <p>R$ 1250,00</p>
+                        <p>Quantidade: <span>5</span></p>
+                    </div>
+                </div>
+                <div class="produtos-in-carrinho">
+                    <img src="img/cel1.jpg" alt="cel1" />
+                    <div class="info-produtos-carrinho">
+                        <p>Galaxy 1</p>
+                        <p>R$ 1250,00</p>
+                        <p>Quantidade: <span>5</span></p>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </body>
+</html>
